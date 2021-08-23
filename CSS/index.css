@@ -1,0 +1,121 @@
+.index__main { 
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+        ". sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 ."
+        ". sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 ."
+        ". sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3 ."
+        ". sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3 ."
+        ". sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 ."
+        ". sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 ."
+        ". sec4 sec4 sec4 sec4 sec4 sec4 sec4 sec4 ."
+        ". sec4 sec4 sec4 sec4 sec4 sec4 sec4 sec4 ."
+    ;
+}
+
+h1 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 10px;
+}
+
+.section1 {    
+    grid-area: sec1;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 5px 5px 10px rgb(102, 153, 204);
+    padding: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;   
+}
+
+.section2 {    
+    grid-area: sec2;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 5px 5px 10px #97d895;
+    padding: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;    
+}
+
+.section3 {    
+    grid-area: sec3;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 img {
+    width: 100%;    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-self: center;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px #e0d67c;       
+}
+
+.section4 {    
+    grid-area: sec4;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 img {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 0;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px #e29071;    
+}
+
+@media screen and (min-width: 768px) {
+    .nav__index {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;  
+    }
+
+    .index__main { 
+        display: grid;
+        grid-template-columns: repeat(17, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            ". sec1 sec1 sec1 sec1 sec1 sec1 sec1 . sec2 sec2 sec2 sec2 sec2 sec2 sec2 ."
+            ". sec1 sec1 sec1 sec1 sec1 sec1 sec1 . sec2 sec2 sec2 sec2 sec2 sec2 sec2 ."
+            ". sec1 sec1 sec1 sec1 sec1 sec1 sec1 . sec2 sec2 sec2 sec2 sec2 sec2 sec2 ."
+            ". sec3 sec3 sec3 sec3 sec3 sec3 sec3 . sec4 sec4 sec4 sec4 sec4 sec4 sec4 ."
+            ". sec3 sec3 sec3 sec3 sec3 sec3 sec3 . sec4 sec4 sec4 sec4 sec4 sec4 sec4 ."
+            ". sec3 sec3 sec3 sec3 sec3 sec3 sec3 . sec4 sec4 sec4 sec4 sec4 sec4 sec4 . "
+        ;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 22px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+}

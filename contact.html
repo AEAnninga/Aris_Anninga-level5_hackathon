@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+    <head>
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+        <title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="CSS/contact.css">
+        <link rel="stylesheet" type="text/css" href="CSS/basic.css">
+    </head>
+
+    <body>
+
+        <header class="kop__index">            
+            <img src="images/quartet_linedrawn_sittingblue.jpg">            
+        </header>
+
+        <nav class="nav__index">            
+            <div><a  href="index.html">HOME</a></div>
+            <div><a href="leden.html">LEDEN</a></div>  
+            <div><a href="repertoire.html">REPERTOIRE</a></div>
+            <div><a  class="active" href="contact.html">CONTACT</a></div>
+            <div class="dropdown">
+                <button class="dropbtn">LINKS</button>
+                    <div class="dropdown-content">
+                        <a href="https://www.imslp.org">Bladmuziek</a>
+                        <a href="https://www.ridderkerkssymfonieorkest.nl">RSO</a>
+                        <a href="https://www.wendrichvioolbouw.nl/">Wendrich Vioolbouw</a>
+                    </div>
+            </div>
+        </nav>
+        
+        <main class="contact__main">
+
+            <section  class="contactuitleg">
+                <div class="contactuitleg-text">
+                    <h1>Boek ons!</h1><br>
+                    <p>Wilt u ons boeken of wilt u meer info?<br>Vul dan hieronder uw gegevens in:</p><br>
+                </div>  
+            </section>
+               
+            <form name="contact" method="POST" data-netlify="true">
+                <ul class="contactformulier"><hr><br>
+                    <li class="contactregel">           
+                        <label for="naam">Naam:</label>
+                        <input class="input" name="Naam: "  type="text" id="naam" required/>
+                    </li><br>
+                    <li class="contactregel">    
+                        <label for="mail">Emailadres:</label>
+                        <input class="input" name="Email: " type="email" id="mail" required/>
+                    </li><br>
+                    <li class="contactregel">            
+                        <label for="tel">Telefoon: </label>
+                        <input class="input" name="Telefoon: " type="tel" id="tel"/>
+                    </li><br>
+                    <li class="contactregel">
+                        <label for="datum">Verzoekdatum: </label>
+                        <input class="input datum" name="Verzoekdatum: " type="date" id="datum"/>
+                    </li>
+                    <br>                            
+                    <li class="contactregel">                        
+                        <label for="genre">Favoriete genre:</label>
+                        <div class="check">
+                            <div class="check1">   
+                                <input name="Favoriete genre:[]" type="checkbox" id="genre" value="klassiek"/>                                
+                                <label for="klassiek">Klassiek</label>
+                            </div>
+                            <div class="check2">
+                                <input name="Favoriete genre:[]" type="checkbox" value="romantisch"/>                                                   
+                                <label for="romantisch">Romantisch</label>
+                            </div>
+                            <div class="check3">
+                                <input name="Favoriete genre:[]" type="checkbox" value="Tango/Zigeuner/Klezmer"/>        
+                                <label for="Tango/Zigeuner/Klezmer">Tango/Zigeuner/Klezmer</label>
+                            </div>
+                            <div class="check4">
+                                <input name="Favoriete genre:[]" type="checkbox" value="Pop/modern"/>
+                                <label for="Pop/modern">Rock/modern</label>
+                            </div>
+                        </div>                     
+                    </li><br>    
+                    <li class="contactregel">
+                        <label for="bericht"> Vraag: </label>
+                        <textarea id="vraag" name="Vraag: " rows="10" id="bericht"></textarea>
+                    </li><br>
+                    <hr><br>    
+                </ul>
+                 
+                <div class="contactsubmit">                   
+                    <div>
+                        <input class="button wis" type="reset" value=" Wissen " /> 
+                    </div>
+                    <div>
+                        <input class="button send" type="submit" value="Verstuur" /> <!-- value overrides default value-->
+                    </div>                
+                </div>
+   
+            </form>            
+
+        </main>
+        
+        <footer class="wrapper__footer">
+            <div class="section4-img">
+                <img src="images/rainingbottombluenotes.jpg">
+            </div>
+            <div class="wrapper__footer-copyright">&copy; 2021 Anningasten</div>
+        </footer>
+        
+    </body>
+
+</html>

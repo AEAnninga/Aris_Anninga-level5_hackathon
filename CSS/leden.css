@@ -1,0 +1,216 @@
+.leden__main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 3fr 3fr 3fr 3fr;
+    grid-template-areas:
+        ". kwar kwar kwar kwar kwar kwar kwar kwar kwar kwar ."
+        ". lid1 lid1 lid1 lid1 lid1 lid1 lid1 lid1 lid1 lid1 ."
+        ". lid2 lid2 lid2 lid2 lid2 lid2 lid2 lid2 lid2 lid2 ."
+        ". lid3 lid3 lid3 lid3 lid3 lid3 lid3 lid3 lid3 lid3 ."
+        ". lid4 lid4 lid4 lid4 lid4 lid4 lid4 lid4 lid4 lid4 ."
+    ;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 10px;
+}
+
+.kwartet {
+    grid-area: kwar;
+    padding: 50px;
+}
+
+.lid1 {
+    grid-area: lid1;
+}
+
+.lid2 {
+    grid-area: lid2;
+}
+
+.lid3 {
+    grid-area: lid3;
+}
+
+.lid4 {
+    grid-area: lid4;
+}
+
+h1, h2, p{
+    text-align: center;
+    color: #69c;
+    margin-top: 5%;
+}
+
+.lid {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;    
+    padding:20px;
+}
+
+.lid__foto {   
+    overflow: hidden;    
+}
+
+.lid__foto img {    
+    border-radius: 250px;
+    width: 250px;
+    height: 250px;
+}
+
+.lid__text {
+    padding: 20px;
+}
+
+.aura-rood {
+    border-radius: 250px;
+    width: 300px;
+    padding: 20px;
+    background-image: url("../images/rond_rood.jpg"); 
+    background-size: cover;
+}
+
+.aura-geel {
+    border-radius: 250px;
+    width: 300px;
+    padding: 20px;
+    background-image: url("../images/rond_geel.jpg"); 
+    background-size: cover;
+}
+
+.aura-groen {
+    border-radius: 250px;
+    width: 300px;
+    padding: 20px;
+    background-image: url("../images/rond_groen.jpg"); 
+    background-size: cover;
+}
+
+.aura-blauw {
+    border-radius: 250px;
+    width: 300px;
+    padding: 20px;
+    background-image: url("../images/rond_blauw.jpg"); 
+    background-size: cover;
+}
+
+.lid1 img {
+    border: 5px solid #e29071;
+}
+
+.lid2 img {
+    border: 5px solid #e0d67c;
+}
+
+.lid3 img {
+    border: 5px solid #97d895;
+}
+
+.lid4 img {
+    border: 5px solid #69c;
+}
+
+@media screen and (min-width: 768px) {
+    .nav__index {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;  
+    }
+
+    .leden__main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr 3fr 3fr;
+        grid-template-areas:
+            "kwar kwar kwar kwar kwar"
+            ". lid1 . lid2 ."
+            ". lid3 . lid4 ."           
+        ;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    p {
+        font-size: 22px;
+    }
+    .lid__foto img {    
+        border-radius: 350px;
+        width: 350px;
+        height: 350px;
+    }
+    
+    .lid__text {
+        padding: 20px;
+    }
+    
+    .aura-rood{ 
+        border-radius: 350px;
+        width: 450px;
+        padding: 20px;
+    }
+    
+    .aura-geel { 
+        border-radius: 350px;
+        width: 450px;
+        padding: 20px;
+        background-image: url("../images/rond_geel.jpg"); 
+        background-size: cover;
+    }
+    
+    .aura-groen {
+        border-radius: 350px;
+        width: 450px;
+        padding: 20px;
+        background-image: url("../images/rond_groen.jpg"); 
+        background-size: cover;
+    }
+    
+    .aura-blauw {
+        border-radius: 350px;
+        width: 450px;
+        padding: 20px;
+        background-image: url("../images/rond_blauw.jpg"); 
+        background-size: cover;
+    }    
+}
+
+@media screen and (min-width: 1500px) {
+    .leden__main {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+            "kwar kwar kwar kwar kwar kwar kwar kwar kwar"
+            ". lid1 . lid2 . lid3 . lid4 ."
+        ;
+    }
+}
